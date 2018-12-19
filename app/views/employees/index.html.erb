@@ -1,0 +1,10 @@
+<h1>
+  This is all the Employees!
+</h1>
+<ul>
+  <% @employees.each do |employee| %>
+    <li>
+      <%= link_to employee.name, employee %>
+    </li>
+  <% end %>
+</ul>
